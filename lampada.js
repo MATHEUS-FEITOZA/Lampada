@@ -12,7 +12,7 @@ let lampBroken = false;
 function LampOn() {
     if (!lampBroken) {
 
-        lamp.src = "/imagens/ligada.jpg";
+        lamp.src = "./imagens/ligada.jpg";
         
     }
 }
@@ -20,14 +20,14 @@ function LampOn() {
 function LampOff() {
     if (!lampBroken) {
 
-        lamp.src = "/imagens/desligada.jpg";
+        lamp.src = "./imagens/desligada.jpg";
     }
 }
 
 function LampBroke() {
     if (!lampBroken) {
 
-        lamp.src = "/imagens/quebrada.jpg";
+        lamp.src = "./imagens/quebrada.jpg";
     }
     return lampBroken = true;
 
@@ -37,7 +37,7 @@ function LampReset() {
 
     if (lampBroken) {
 
-        lamp.src = "/imagens/desligada.jpg";
+        lamp.src = "./imagens/desligada.jpg";
         lampBroken = false;
         
     }
