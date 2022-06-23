@@ -8,10 +8,12 @@ let lampBroken = false;
 
 
 
+
 function LampOn() {
     if (!lampBroken) {
 
         lamp.src = "/imagens/ligada.jpg";
+        
     }
 }
 
@@ -50,7 +52,7 @@ turnOff.addEventListener("click", LampOff);
 lamp.addEventListener("mouseover", LampOn);
 lamp.addEventListener("mouseleave", LampOff);
 lamp.addEventListener("dblclick", LampBroke)
-//reset.addEventListener("click", LampReset)
+reset.addEventListener("click", LampReset)
 
 
 
